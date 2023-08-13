@@ -1,0 +1,19 @@
+{
+  "name": "surf_free",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ckirk/surf_free.git"
+  },
+  "author": "Chris Kirkinis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ckirk/surf_free/issues"
+  },
+  "homepage": "https://github.com/ckirk/surf_free#readme"
+}
