@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"version": "0.0.6",
+	"name": "surf_free",
+	"short_name": "surf_free",
+	"description": "surf_free_or_die",
+	"icons": {
+		"16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+	},
+  "author": "ck5000",
+	"content_scripts": [
+   {
+     "matches": ["https://*.surfline.com/surf-*/*"],
+		 "run_at": "document_idle",
+     "js": ["index.js"],
+		 "css": ["styles.css"]
+   }
+ ],
+	"permissions": [
+	    "activeTab",
+			"https://www.surfline.com/*"
+	  ]
+}
