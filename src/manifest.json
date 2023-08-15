@@ -1,6 +1,6 @@
 {
 	"manifest_version": 2,
-	"version": "0.0.6",
+	"version": "2.0.0",
 	"name": "surf_free",
 	"short_name": "surf_free",
 	"description": "surf_free_or_die",
@@ -12,7 +12,7 @@
   "author": "ck5000",
 	"content_scripts": [
    {
-     "matches": ["https://*.surfline.com/surf-*/*"],
+     "matches": ["https://*.surfline.com/surf-cams/*"],
 		 "run_at": "document_idle",
      "js": ["index.js"],
 		 "css": ["styles.css"]
