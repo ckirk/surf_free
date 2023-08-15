@@ -84,11 +84,11 @@ const initTracker = () => {
   const eventCaptureHtml = '<div id="tkr-event-capture"></div>'
 
   // ADD HTML ELEMENTS
-    // document.body.appendChild(el);
-    // document.body.prepend(el2);
-    // document.body.append('Text')
-    // document.body.innerHTML = "<div>Text</div>";
-    // insertAdjacentHTML()
+  // document.body.appendChild(el);
+  // document.body.prepend(el2);
+  // document.body.append('Text')
+  // document.body.innerHTML = "<div>Text</div>";
+  // insertAdjacentHTML()
   video.insertAdjacentHTML('afterend', eventCaptureHtml)
   video.insertAdjacentHTML('afterend', overlayHtml)
 
@@ -121,7 +121,7 @@ const initTracker = () => {
       )
     })
   })
-  
+
   // capture user clicks
   eventCapture.addEventListener('click', (e) => {
     // record position and time of event
@@ -138,6 +138,15 @@ const initTracker = () => {
     let progress = (video.currentTime / video.duration) * 100
     playhead.style.setProperty('width', `${progress}%`)
   })
+
+  // find buttons (for other times)
+  const buttons = document.getElementsByClassName('CameraClips_cameraClip__Wh_DL') //.play()
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', () => {
+      console.log('click!')
+      // see if src attrubute has changed
+    })
+  }
 }
 
 
